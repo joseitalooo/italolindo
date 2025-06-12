@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fale conosco no WhatsApp</title>
+  <title>Teste Grátis - WhatsApp</title>
   <style>
     body {
-      background-color: #111;
+      background-color: #000;
       color: white;
       font-family: Arial, sans-serif;
       display: flex;
@@ -15,27 +15,34 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
     .mensagem {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      max-width: 90%;
     }
     .whatsapp-btn {
-      background-color: #128C7E;
+      background-color: #00FF9D;
+      color: #000;
+      font-size: 1.4rem;
+      padding: 15px 30px;
       border: none;
-      color: white;
-      font-size: 1.5rem;
-      padding: 15px 25px;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
       text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 20px #00FF9D;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="mensagem">Estamos te redirecionando para uma conversa direta no WhatsApp. Toque no botão abaixo para continuar:</div>
+  <div class="mensagem">Aperte no botão abaixo e fale conosco no WhatsApp para iniciar seu <strong>teste grátis</strong> agora mesmo:</div>
   <a href="https://wa.me/5521971267105?text=Quero%20testar%20os%20canais" class="whatsapp-btn">Falar no WhatsApp</a>
 </body>
 </html>
