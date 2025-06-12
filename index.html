@@ -1,38 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Redirecionando...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Grátis - WhatsApp</title>
   <style>
     body {
-      background-color: #ffffff;
-      color: #111111;
+      background-color: #000;
+      color: white;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
       text-align: center;
-      padding: 50px 20px;
     }
-    h1 {
-      font-size: 22px;
-      margin-bottom: 20px;
+    .mensagem {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      max-width: 90%;
     }
-    p {
-      font-size: 16px;
-      line-height: 1.5;
+    .whatsapp-btn {
+      background-color: #00FF9D;
+      color: #000;
+      font-size: 1.4rem;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 20px #00FF9D;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
     }
   </style>
-  <script>
-    setTimeout(function(){
-      window.location.href = "https://wa.me/5521971267105?text=Quero%20testar%20os%20canais%2C%20filmes%20e%20s%C3%A9ries";
-    }, 3200);
-  </script>
 </head>
 <body>
-  <h1>Estamos te redirecionando para o WhatsApp...</h1>
-  <p>
-    Aguarde alguns segundos.<br>
-    Você será direcionado para conversar com um atendente e ativar seu teste grátis de TV com canais, filmes e séries liberados por 3 horas.
-  </p>
+  <div class="mensagem">Aperte no botão abaixo e fale conosco no WhatsApp para iniciar seu <strong>teste grátis</strong> agora mesmo:</div>
+  <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/5521971267105?text=Quero%20testar%20os%20canais%2C%20filmes%20e%20s%C3%A9ries%20na%20minha%20TV'">Falar no WhatsApp</button>
 </body>
 </html>
