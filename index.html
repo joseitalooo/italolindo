@@ -1,47 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Redirecionando para o WhatsApp...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste Grátis - WhatsApp</title>
   <style>
     body {
       background-color: #000;
-      color: white;
+      color: #fff;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 20px;
       text-align: center;
+      padding-top: 80px;
     }
-    .mensagem {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      max-width: 90%;
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
     }
-    .whatsapp-btn {
-      background-color: #00FF9D;
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background-color: #25D366;
       color: #000;
-      font-size: 1.4rem;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 20px #00FF9D;
-      transition: transform 0.2s ease;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 12px #25D366;
+      animation: pulse 1.5s infinite;
     }
-    .whatsapp-btn:hover {
-      transform: scale(1.05);
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0px #25D366; }
+      50% { box-shadow: 0 0 18px #25D366; }
+      100% { box-shadow: 0 0 0px #25D366; }
     }
   </style>
 </head>
 <body>
-  <div class="mensagem">Aperte no botão abaixo e fale conosco no WhatsApp para iniciar seu <strong>teste grátis</strong> agora mesmo:</div>
-  <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/5521971267105?text=Quero%20testar%20os%20canais%2C%20filmes%20e%20s%C3%A9ries%20na%20minha%20TV'">Falar no WhatsApp</button>
+  <h1>Estamos te redirecionando para o WhatsApp...</h1>
+  <p>Caso não seja redirecionado automaticamente, clique no botão abaixo:</p>
+  <a class="button" href="https://wa.me/5521971267105?text=Quero%20testar%20os%20canais%2C%20filmes%20e%20s%C3%A9ries%20na%20minha%20TV">Falar no WhatsApp</a>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://wa.me/5521971267105?text=Quero%20testar%20os%20canais%2C%20filmes%20e%20s%C3%A9ries%20na%20minha%20TV";
+    }, 2000);
+  </script>
 </body>
 </html>
